@@ -11,7 +11,7 @@ When a hub is sending a message using the wordblock `hub transmit signal AA with
   ^     ^     ^     ^     ^     ^     ^     ^     ^
   |     |_____|     |     |_________________|     |_________________
   |     |           |     |                     Transmitted data (varying number of bytes)
-  |     |           |    4 Bytes encoding the signal name
+  |     |           |    4 Bytes signal name encoded as a CRC32 hash
   |     |         Index of the message
   |     Company identifier
   Indicating manufacturer data (notice there is no starting byte indicating the length of the data)
