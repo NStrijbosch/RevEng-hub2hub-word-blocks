@@ -11,7 +11,7 @@ When transmitting data using the wordblock: <img src="images/broadcast.svg" alt=
   ^     ^     ^     ^     ^     ^     ^     ^     ^
   |     |_____|     |     |_________________|     |_________________
   |     |           |     |                     ASCII string containing transmitted data (number of bytes depends on the length of the transmitted data, the maximum is 23 bytes)
-  |     |           |    4 signal name encoded as a CRC32 hash
+  |     |           |    Signal name encoded as a CRC32 hash
   |     |         Index of the message
   |     Company identifier
   Indicating manufacturer data (notice there is no starting byte indicating the length of the data)
